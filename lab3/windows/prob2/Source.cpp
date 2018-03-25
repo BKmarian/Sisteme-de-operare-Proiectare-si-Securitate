@@ -6,24 +6,33 @@ std::queue<std::string> coada;
 HANDLE hThreads[4];
 CONDITION_VARIABLE condition;
 CRITICAL_SECTION csSync;
+CRITICAL_SECTION conditionCriticalSection;
 
 DWORD WINAPI afisare(LPVOID lpThreadParameter) {
 	int threadId = (int)lpThreadParameter;
-	DWORD dwWaitResult1,dwWaitResult2;
+	DWORD dwWaitResult1, dwWaitResult2;
 	while (true) {
-	
-		EnterCriticalSection(&csSync);
+
+		EnterCriticalSection(&conditionCriticalSection);
 		while (coada.size() == 0) {
-			SleepConditionVariableCS(&condition, &csSync, INFINITE);
+			SleepConditionVariableCS(&condition, &conditionCriticalSection, INFINITE);
 		}
+		LeaveCriticalSection(&conditionCriticalSection);
+
+		EnterCriticalSection(&csSync);
 		std::string numeFisier = coada.front();
+		if (numeFisier.empty()) { //OBS  pentru a evita cazul in care un thread iese din variabile de conditie , 
+			//inainte ca alt thread sa faca pop pe coada , acest scenariu nu apare daca pornesc ai intai parcurgerea directoarelor din threadul principal
+			LeaveCriticalSection(&csSync);
+			continue;
+		}
 		if (numeFisier == "abc") {
 			coada.pop();
 			LeaveCriticalSection(&csSync);
 			break;
 		}
 		printf("%s thread id : %d\n", numeFisier.c_str(), threadId);
-		coada.pop(); 
+		coada.pop();
 		LeaveCriticalSection(&csSync);
 	}
 	return NULL;
@@ -49,8 +58,8 @@ void dirListFiles(char* startDir, int depth)
 		{
 			if (content.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
 			{
-				EnterCriticalSection(&csSync);
 				std::string numeFisier(content.cFileName);
+				EnterCriticalSection(&csSync);
 				coada.push(numeFisier);
 				WakeConditionVariable(&condition);
 				LeaveCriticalSection(&csSync);
@@ -59,8 +68,8 @@ void dirListFiles(char* startDir, int depth)
 			}
 			else
 			{
-				EnterCriticalSection(&csSync);
 				std::string numeFisier(content.cFileName);
+				EnterCriticalSection(&csSync);
 				coada.push(content.cFileName);
 				WakeConditionVariable(&condition);
 				LeaveCriticalSection(&csSync);
@@ -72,6 +81,7 @@ void dirListFiles(char* startDir, int depth)
 
 void closeHandles() {
 	DeleteCriticalSection(&csSync);
+	DeleteCriticalSection(&conditionCriticalSection);
 	for (int i = 0; i < 4; ++i)
 		CloseHandle(hThreads[i]);
 }
@@ -82,8 +92,9 @@ int main(int argc, char** argv)
 	DWORD dwId1;
 
 	void* result;
-	
+
 	InitializeCriticalSection(&csSync);
+	InitializeCriticalSection(&conditionCriticalSection);
 
 	InitializeConditionVariable(&condition);
 
@@ -92,15 +103,16 @@ int main(int argc, char** argv)
 	}
 
 	dirListFiles(startDir, 0);
+
 	coada.push("abc");
 	coada.push("abc");
 	coada.push("abc");
-	coada.push("abc"); 
+	coada.push("abc");
 	WakeAllConditionVariable(&condition);
 
 	DWORD ret = WaitForMultipleObjects(4, hThreads, TRUE, INFINITE);
 
-	closeHandles();
 	system("pause");
+	closeHandles();
 	return 0;
 }

@@ -27,9 +27,12 @@ void *afisare(void *param) {
 
         pthread_mutex_lock(&mutex);
         std::string numeFisier = coada.front();
+		if (numeFisier.empty()) {
+            pthread_mutex_unlock( & mutex );
+			continue;
+		}
         if (numeFisier == "abc") {
             pthread_mutex_unlock( & mutex );
-            pthread_mutex_unlock( & conditionMutex );
             free(param);
             break;
         }
