@@ -1,0 +1,95 @@
+#include<stdio.h>
+#include<windows.h>
+#include <queue>
+
+std::queue<char *> coada;
+
+sem_t semaphore;
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+
+void *afisare(void *param) {
+	while (true) {
+		sem_wait(&semaphore);
+		pthread_mutex_lock(&mutex);
+		char * numeFisier = coada.front();
+		if (strcmp(numeFisier, "abc") == 0) {
+			break;
+		}
+		printf("%s\n", numeFisier);
+		coada.pop();
+		pthread_mutex_unlock(&mutex);
+		sem_post(&semaphore);
+	}
+	return NULL;
+}
+
+void dirListFiles(char* startDir, int depth)
+{
+	HANDLE hFind;
+	WIN32_FIND_DATA content;
+	char path[MAX_PATH];
+
+	sprintf_s(path, "%s\\*", startDir);
+
+
+	if ((hFind = FindFirstFile(path, &content)) == INVALID_HANDLE_VALUE)
+	{
+		abort();
+	}
+
+	BOOL cont = TRUE;
+	while (cont == TRUE)
+	{
+		if ((strcmp(".", content.cFileName) != 0) && (strcmp("..", content.cFileName) != 0))
+		{
+			if (content.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
+			{
+				for (int i = 0; i < depth; ++i)
+					printf("\t");
+				fprintf(stdout, "%s\n", content.cFileName);
+				sprintf_s(path, "%s\\%s", startDir, content.cFileName);
+				dirListFiles(path, depth + 1);
+			}
+			else
+			{
+				for (int i = 0; i < depth; ++i)
+					printf("\t");
+				fprintf(stdout, "%s\n", content.cFileName);
+			}
+		}
+		cont = FindNextFile(hFind, &content);
+	}
+}
+
+int main(int argc, char** argv)
+{
+	char* startDir = "c:\\work";
+
+	dirListFiles(startDir, 0);
+
+	void* result;
+	pthread_t handle[4];
+	sem_init(&semaphore, 0, 1);
+	for (int i = 0; i <= 3; i++) {
+		pthread_create(&handle[i], NULL, afisare, NULL);
+	}
+	char path[500] = "marian2";
+	readInDepth(0, path);
+
+	coada.push("abc");
+	sem_post(&semaphore);
+	coada.push("abc");
+	sem_post(&semaphore);
+	coada.push("abc");
+	sem_post(&semaphore);
+	coada.push("abc");
+	sem_post(&semaphore);
+
+	pthread_join(handle[0], &result);
+	pthread_join(handle[1], &result);
+	pthread_join(handle[2], &result);
+	pthread_join(handle[3], &result);
+
+	system("pause");
+	return 0;
+}
