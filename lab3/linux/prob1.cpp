@@ -11,27 +11,26 @@ sem_t semaphore;
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 void destroy() {
     pthread_mutex_destroy(&mutex);
-    pthread_mutex_destroy(&conditionMutex);
-    pthread_cond_destroy(&cond);
+    sem_destroy(&semaphore);
 }
 const char slash[2] = "/";
 void *afisare(void *param) {
     int threadId = *(int *)param;
-	while(true) {
-		sem_wait(&semaphore);
-		pthread_mutex_lock( &mutex );
-		std::string numeFisier = coada.front();
-		if (numeFisier == "abc") {
+    while(true) {
+        sem_wait(&semaphore);
+        pthread_mutex_lock( &mutex );
+        std::string numeFisier = coada.front();
+        if (numeFisier == "abc") {
             coada.pop();
             pthread_mutex_unlock(&mutex);
             free(param);
-			break;
-		}
-		printf("%s:   processed by thread %d\n",numeFisier.c_str(),threadId);
-		coada.pop();
-		pthread_mutex_unlock( &mutex );
-	}
-	return NULL;
+            break;
+        }
+        printf("%s:   processed by thread %d\n",numeFisier.c_str(),threadId);
+        coada.pop();
+        pthread_mutex_unlock( &mutex );
+    }
+    return NULL;
 }
 void readInDepth(int depth , char * path) {
     struct dirent *entry;
@@ -69,7 +68,7 @@ int main() {
     for(int i = 0 ; i <=3 ; i++) {
         int *arg = (int *)malloc(sizeof(*arg));
         *arg = i;
-	    pthread_create(&handle[i], NULL, afisare, arg);
+        pthread_create(&handle[i], NULL, afisare, arg);
     }
     char path[500] = "..";
     readInDepth(0,path);
@@ -90,4 +89,4 @@ int main() {
 
     destroy();
 }
- 
+
