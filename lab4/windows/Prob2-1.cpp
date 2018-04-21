@@ -4,13 +4,13 @@
 #include <stdio.h>
 #include <string>
 HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
-HANDLE hFile, hMutexOne,hEvent;
+HANDLE hFile, hMutexOne, hEvent;
 const char line = '\n';
 void readFile() {
 	DWORD dw_bytes_written, byteRead, dwPtrLow;
 
 	char *array = (char*)malloc(50 * sizeof(char));
-	int i = 0,nr;
+	int i = 0, nr;
 	char ch;
 	while (1)
 	{
@@ -25,10 +25,9 @@ void readFile() {
 	printf("nr = %d", nr);
 	WaitForSingleObject(hEvent, INFINITE);
 	for (int i = 0; i < 1000000; i++) {
-		printf("%d", i);
 		std::string s = std::to_string(nr);
 		WaitForSingleObject(hMutexOne, INFINITE);
-		
+
 		dwPtrLow = SetFilePointer(hFile,
 			0,
 			NULL,
@@ -62,7 +61,7 @@ int main(int argc, char *argv[])
 	if (hFile == INVALID_HANDLE_VALUE)
 		WriteFile(hStdOut, "Error opening the file", sizeof("Error opening the file"), temp, NULL);
 
-	TCHAR *tszMutexName = "AMutexMarian";
+	TCHAR *tszMutexName = "AMutexMarian2";
 
 	hMutexOne = CreateMutex(NULL, FALSE, tszMutexName);
 	if (hMutexOne == NULL) {
@@ -71,7 +70,7 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 	hEvent = CreateEvent(NULL, false, false, "MyEvent");
-	
+
 	if (hEvent == NULL) {
 		printf("Unable to create event.\n");
 		printf("Error no. %d\n", GetLastError());
@@ -85,5 +84,6 @@ int main(int argc, char *argv[])
 
 
 	closeHandles();
+	system("pause");
 	return 0;
 }

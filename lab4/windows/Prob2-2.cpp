@@ -25,7 +25,6 @@ void readFile() {
 	printf("nr = %d", nr);
 	SetEvent(hEvent);
 	for (int i = 0; i < 1000000; i++) {
-		printf("%d", i);
 		std::string s = std::to_string(nr);
 		WaitForSingleObject(hMutexOne, INFINITE);
 
@@ -57,31 +56,34 @@ int main(int argc, char *argv[])
 		NULL);
 
 
-	if (hFile == INVALID_HANDLE_VALUE)
+	if (hFile == INVALID_HANDLE_VALUE) {
 		WriteFile(hStdOut, "Error opening the file", sizeof("Error opening the file"), temp, NULL);
+		CloseHandle(hFile);
+		return -1;
+	}
 
-	TCHAR *tszMutexName = "AMutexMarian";
+	TCHAR *tszMutexName = "AMutexMarian2";
 
-	hMutexOne = CreateMutex(NULL, FALSE, tszMutexName);
+	hMutexOne = OpenMutex(MUTEX_ALL_ACCESS, FALSE, tszMutexName);
 	if (hMutexOne == NULL) {
 		printf("Unable to open mutex.\n");
 		CloseHandle(hFile);
-		exit(EXIT_FAILURE);
+		CloseHandle(hMutexOne);
+		return -1;
 	}
 	hEvent = OpenEvent(EVENT_ALL_ACCESS, false, "MyEvent");
 
 	if (hEvent == NULL) {
-		CloseHandle(hMutexOne);
-		CloseHandle(hFile);
+		closeHandles();
 		printf("Unable to create event.\n");
 		printf("Error no. %d\n", GetLastError());
-		exit(EXIT_FAILURE);
+		return -1;
 	}
 
 
 	readFile();
 
-
-	closeHandles()
+	system("pause");
+	closeHandles();
 	return 0;
 }

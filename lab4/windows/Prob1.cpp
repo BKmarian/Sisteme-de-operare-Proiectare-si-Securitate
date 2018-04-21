@@ -3,7 +3,6 @@
 #include "windows.h"
 #include<stdlib.h>
 #include<stdio.h>
-
 int main(int argc, char* argv[])
 {
 
@@ -22,6 +21,9 @@ int main(int argc, char* argv[])
 	if (!bResult) {
 		dwErr = GetLastError();
 		printf(("Create process failed, error=%x\n"), dwErr);
+		CloseHandle(pi.hProcess);
+		CloseHandle(pi.hThread);
+		return -1;
 	}
 	else {
 		DWORD exitCode;
@@ -41,6 +43,9 @@ int main(int argc, char* argv[])
 	{
 		dwErr = GetLastError();
 		printf(("Create process failed, error=%x\n"), dwErr);
+		CloseHandle(pi.hProcess);
+		CloseHandle(pi.hThread);
+		return -1;
 	}
 	else {
 		DWORD exitCode;
