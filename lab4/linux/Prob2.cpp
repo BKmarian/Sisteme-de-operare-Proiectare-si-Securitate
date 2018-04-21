@@ -27,37 +27,23 @@ void readFile() {
 	while(read(fd,&ch,1) != 0)
 	{
 		printf("%d",ch);
+		if(ch == line) break;
 		array[i] = ch;
 		i++;
 	}
 	array[i] = '\0';
 	sscanf(array, "%d", &nr);
-	int nr2 = nr;
+	nr++;
 
-	lseek(fd, 0, SEEK_END);
-	if(fork()) {
-		printf("Started parent\n");
-		for (int i = 0; i < 1000000; i++) {
-			nr++;
-			printf("parent wrote %d\n",nr);
-			std::string s = std::to_string(nr);
-			sem_wait(semaphore);
-			write(fd,&line,1);
-			write(fd,s.c_str(),s.length());
-			sem_post(semaphore);
-		}
-	}
-	else {
-		printf("Started child\n");
-		for (int i = 0; i < 1000000; i++) {
-			printf("child wrote %d\n",nr2);
-			nr2++;
-			std::string s = std::to_string(nr2);
-			sem_wait(semaphore);
-			write(fd,&line,1);
-			write(fd,s.c_str(),s.length());
-			sem_post(semaphore);
-	}
+	std::string s = std::to_string(nr);
+
+	for (int i = 0; i < 1000000; i++) {
+		printf("process wrote %d\n",nr);
+		sem_wait(semaphore);
+		lseek(fd, 0, SEEK_END);
+		write(fd,&line,1);
+		write(fd,s.c_str(),s.length());
+		sem_post(semaphore);
 	}
 }
 int main(int argc, char *argv[])
@@ -70,13 +56,13 @@ int main(int argc, char *argv[])
       return -1;
     }
 
-    semaphore = sem_open(SEM_NAME, O_CREAT | O_EXCL, 0644, INITIAL_VALUE);
-    sem_unlink(SEM_NAME); //pentru a preveni existenta semaforului dupa terminarea proceselor
+    semaphore = sem_open(SEM_NAME, O_CREAT, 0644, INITIAL_VALUE);
     if (semaphore == SEM_FAILED) {
         printf("cannot create semaphore with error %s\n",strerror(errno));
-        exit(EXIT_FAILURE);
+        return -1;
     }
 
+    //sem_unlink(SEM_NAME); //pentru a preveni existenta semaforului dupa terminarea proceselor
 
 	readFile();
 
