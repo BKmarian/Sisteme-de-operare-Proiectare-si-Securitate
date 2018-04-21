@@ -40,6 +40,13 @@ void readFile() {
 		ReleaseMutex(hMutexOne);
 	}
 }
+
+void closeHandles() {
+	CloseHandle(hMutexOne);
+	CloseHandle(hFile);
+	CloseHandle(hEvent);
+}
+
 int main(int argc, char *argv[])
 {
 	LPDWORD temp = NULL;
@@ -68,11 +75,8 @@ int main(int argc, char *argv[])
 	if (hEvent == NULL) {
 		printf("Unable to create event.\n");
 		printf("Error no. %d\n", GetLastError());
-		exit(EXIT_FAILURE);
-	}
-
-	if (hMutexOne == NULL) {
-		printf("Unable to open mutex.\n");
+		CloseHandle(hMutexOne);
+		CloseHandle(hFile);
 		exit(EXIT_FAILURE);
 	}
 
@@ -80,8 +84,6 @@ int main(int argc, char *argv[])
 	readFile();
 
 
-	CloseHandle(hMutexOne);
-	CloseHandle(hFile);
-	CloseHandle(hEvent);
+	closeHandles();
 	return 0;
 }
