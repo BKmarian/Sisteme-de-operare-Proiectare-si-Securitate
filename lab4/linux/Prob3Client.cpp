@@ -42,6 +42,5 @@ int main()
         printf("Recieved sum: %d\n", sum);
         close(fd);
     }
-    printf("cannot create semaphore with error %s\n",strerror(errno));
     return 0;
 }
