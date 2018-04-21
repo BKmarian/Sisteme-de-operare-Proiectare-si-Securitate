@@ -26,7 +26,7 @@ int main()
 
         scanf("%d", &nr);
         fd = open(myfifo, O_WRONLY);
-        //blochez operatiile pe file descriptor pentru a nu scrie un proces nr apoi alt proces nr si processId
+        //blochez operatiile pe file descriptor pentru a nu se intercala scrierile unor procese diferite
         flock(fd,LOCK_EX);
         write(fd, &nr, sizeof(nr));
         write(fd, &processId, sizeof(processId));
