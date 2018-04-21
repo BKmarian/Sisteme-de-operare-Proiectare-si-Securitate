@@ -93,7 +93,7 @@ int _tmain(int argc, TCHAR *argv[])
 			system("pause");
 			CloseHandle(hPipe);
 		}
-		UnlockFileEx(hPipe, 0, 0, 0, &structOverlap);
+		UnlockFileEx(hPipe, 0, MAXDWORD, MAXDWORD, &structOverlap);
 		printf("recieved sum = %d\n", sum);
 	}
 
