@@ -9,7 +9,7 @@ const char line = '\n';
 void readFile() {
 	DWORD dw_bytes_written, byteRead, dwPtrLow;
 
-	char *array = (char*)malloc(50 * sizeof(char));
+	char array[50];
 	int i = 0, nr;
 	char ch;
 	while (1)

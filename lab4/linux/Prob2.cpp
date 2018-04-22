@@ -21,7 +21,7 @@ sem_t *semaphore;
 const char line = '\n';
 void readFile() {
 	int nr;
-	char *array = (char*)malloc(50*sizeof(char));
+	char array[50];
 	int i = 0;
 	char ch;
 	while(read(fd,&ch,1) != 0)
