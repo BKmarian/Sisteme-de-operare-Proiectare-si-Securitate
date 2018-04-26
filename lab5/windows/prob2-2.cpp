@@ -50,11 +50,11 @@ int _tmain()
 	for (int i = 2; i <= 10; i = i + 2) {
 		WaitForSingleObject(hMutexOne, INFINITE);
 		if(i >= 10) {
-    		*(str + i - 1) = (char)i%10;
-    		*(str + i) = (char)i/10;
+    		*(buf + i - 1) = ((int)i/10) + '0';
+    		*(buf + i) = ((int)i%10) + '0';
     	}
     	else
-			*(str + i - 1) = i + '0';
+			*(buf + i - 1) = i + '0';
 		ReleaseMutex(hMutexOne);
 	}
 
