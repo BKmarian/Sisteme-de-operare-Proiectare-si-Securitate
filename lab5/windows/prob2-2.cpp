@@ -10,31 +10,29 @@ TCHAR szName[] = TEXT("MyFileMappingObject");
 
 int _tmain()
 {
-	HANDLE hMutexOne = CreateMutex(NULL, FALSE, "mutexx");
+	HANDLE hMutexOne = OpenMutex(MUTEX_ALL_ACCESS, FALSE, "mutexx");
 	if (hMutexOne == NULL) {
-		printf("Unable to open mutex.\n");
-		CloseHandle(hMutexOne);
-		return -1;
+		printf("Unable to create mutex.\n");
+		printf("Error no. %d\n", GetLastError());
+		exit(EXIT_FAILURE);
 	}
 	HANDLE hMapFile;
 	LPCTSTR pBuf;
 
-	hMapFile = CreateFileMapping(
-		INVALID_HANDLE_VALUE,    // use paging file
-		NULL,                    // default security
-		PAGE_READWRITE,          // read/write access
-		0,                       // maximum object size (high-order DWORD)
-		BUF_SIZE,                // maximum object size (low-order DWORD)
-		szName);                 // name of mapping object
+	hMapFile = OpenFileMapping(
+		FILE_MAP_ALL_ACCESS,   // read/write access
+		FALSE,                 // do not inherit the name
+		szName);               // name of mapping object
 
 	if (hMapFile == NULL)
 	{
-		_tprintf(TEXT("Could not create file mapping object (%d).\n"),
+		_tprintf(TEXT("Could not open file mapping object (%d).\n"),
 			GetLastError());
 		return 1;
 	}
-	pBuf = (LPTSTR)MapViewOfFile(hMapFile,   // handle to map object
-		FILE_MAP_ALL_ACCESS, // read/write permission
+
+	pBuf = (LPTSTR)MapViewOfFile(hMapFile, // handle to map object
+		FILE_MAP_ALL_ACCESS,  // read/write permission
 		0,
 		0,
 		BUF_SIZE);
@@ -49,9 +47,14 @@ int _tmain()
 		return 1;
 	}
 	char* buf = (char *)pBuf;
-	for (int i = 1; i <= 9; i = i + 2) {
+	for (int i = 2; i <= 10; i = i + 2) {
 		WaitForSingleObject(hMutexOne, INFINITE);
-		*(buf + i) = i + '0';
+		if(i >= 10) {
+    		*(str + i - 1) = (char)i%10;
+    		*(str + i) = (char)i/10;
+    	}
+    	else
+			*(str + i - 1) = i + '0';
 		ReleaseMutex(hMutexOne);
 	}
 
