@@ -33,8 +33,8 @@ int main()
     for(int i = 2 ; i <= 10 ; i = i + 2) {
     	sem_wait(semaphore);
     	if(i >= 10) {
-    		*(str + i - 1) = (char)i%10;
-    		*(str + i) = (char)i/10;
+    		*(str + i - 1) = ((int)i/10) + '0';
+    		*(str + i) = ((int)i%10) + '0';
     	}
     	else
 			*(str + i - 1) = i + '0';
