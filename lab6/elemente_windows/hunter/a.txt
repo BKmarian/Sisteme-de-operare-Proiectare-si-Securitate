@@ -1,0 +1,1307 @@
+
+Strings v2.53 - Search for ANSI and Unicode strings in binary images.
+Copyright (C) 1999-2016 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+!This program cannot be run in DOS mode.
+Rich
+.text
+`.rdata
+@.data
+.rsrc
+@.reloc
+u1h0e
+t h
+YY3
+uHSW
+t5SW
+0h(
+YY]
+u"h
+tF2
+j Y+
+_^[
+_^[
+SVW
+Y__^[
+$S3
+Genu
+5ineI
+5ntel
+t#=`
+|2j
+tM3
+8_^]
+xf~U
+8csm
+t.h
+t!h
+_^[
+G f
+G0f
+G@f
+GPf
+G`f
+s>f
+SVW
+URPQQh
+D$0
+L$,3
+T$4
+_^[
+UVWS
+[_^]
+SVWj
+_^[]
+t'V
+YYV
+uYj
+BVj(j
+Y^W
+h4#
+t k
+j Y+
+QSVW
+Wu5j
+t!j
+VVS
+_^[
+^_[]
+j Y+
+u'V
+j Y+
+SVWUj
+]_^[
+P(R
+P$R
+SVW
+UPj
+D$(
+|$,
+;t$,v-
+_^[
+UQPXY]Y[
+h(j
+j Y+
+SSS
+YYhH
+csm
+t d
+8PE
+f9H
+t#Vh
+u+j
+F P
+hHj
+8"ul
+8"u5
+_^[
+x);
+SS3
+[_^
+<ct
+<st
+t+3
++~4
+F4_^[]
+QQSV
+t7Sj
++~4
+F4_^[
+~&V
+G;}
+^_]
+F;u
+_^]
+A(f
+HHP
+<et
+<Et
+90t
+<Zw
+<Zw
+QSV
+8"t
+_^[
+ t-
+I  
+QVj
+QSV
+P}E
+8^1u
+P}7
+8^1u
+y1*t
+A(P
+A1<Fu
+<Nu&
+ItO
+Lt>
+Tt-
+8hu
+<3u
+<6u
+u<dt
+<it
+<ot
+<ut
+<xt
+<Xu]
+lt*
+zu7
+8lu
+A1<Fu
+<Nu&
+ItO
+Lt>
+Tt-
+8hu
+<3u
+<6u
+u<dt
+<it
+<ot
+<ut
+<xt
+<Xu]
+lt*
+zu7
+8lu
+QSV
+jXY
+>t7
+Ct>
+tVH
+Mt?
+g~1
+V 3
+jXX
+^$+^8+
+j P
+j0P
+j P
+_^[
+QSV
+jXY
+>t7
+Ct>
+tVH
+Mt?
+g~1
+V 3
+jXX
+^$+^8+
+j P
+j0P
+j P
+_^[
+y1*t
+A$P
+F1P
+QQV
+F1<at
+<At
+F1<gt
+<Gu
+~@S
+v(PQ
+F1<gt
+<Gu
+8-u
+N @@
+<it
+<It
+<nt
+<Nu
+F1s
+V8^
+F1P
+F8SP
+QSV
+tVI
+80t
+_^[
+Q j
+F1P
+YY_
+ujQ
+~43
+u'9E
+C;^8u
+_^3
+~43
+u'9E
+C;^8u
+_^3
+++p
+0^_[]
+tMW
+8*u 
+C;]
+_^3
+csm
+YY]
+99t
+wOtD
+QWWP
+9:t
+A98u
+_^[
+>"u
+< t
+< t
+>\t
+>"u1
+9"u
+< t1<
+_^[
+QQSVW
+<=t
+t7j
+t0W
+YY3
+Y_^
+PPPPP
+Y_^]
+h6R
+hhj
+j Y+
+j Y+
+j Y+
+Vj 
+QhH
+9>t
+>_^]
+YY]
+t V
+$~&
+,0<
+,a<
+,A<
+u=j
+<xt
+<Xt
+,a<
+,A<
+t9;
+H#E
+t"j
+t V
+f;1u
+t k
+YjP
+35L
+PPPPP
+)Vj
+t'@
+0^]
+h0"
+h("
+h0"
+QSVW
+Wu5j
+t!j
+VVS
+_^[
+^_[]
+VhH"
+hD"
+hH"
+j Y+
+u'V
+j,h
+~0WPQ
+_^]
+_^]
+_^[
+SVW3
+N(@
+N(@
+_^[
+YY]
+~);_
+|'3
+GWVj
+u]f
+WVS
+j*^
+^_[
+QVWSj
+WVS
+j"^
+j X+
+f99t
+j X+
+4Q3
+f99t
+f99t
+f99
+4Q3
+f99t
+ud+
+f99
+f99t
+h(k
+hhk
+hHk
+AjC
+YY]
+FLY;
+FL^
+t!VP
+tmhd
+tehd
+SVW
+t%P
+u|V
+_^[
+hKq
+4SVW
+j"_
+uLS
+u$SW
+jeV
+Yu!
+j0Yu
+j0Yf
+v9j0
+Wj0XPS
+j0X
+PVQ
+jdVQ
+Gj0X
+_^[
+u V
+ _^
+j"^
+8-u
+80t/
+-jd_;
+90u
+PPPPP
+SVW
+~Xj
+V@j0P
+_^[t
+SVW
+QWPV
+|+;
+}'9E
+u W
+ _^[
+-AJ
+PPPPP
+t&V
+_^]
+u6W
+SPQ
+u,P
+u,t6
+$_^[
+YY]
+SWj
+u+h
+_[^]
+t,V
+_^]
+9>t
+*?P
+PSS
+Y_[
+SSSSS
+wSV
+^[_
+WWWWW
+</t
+<\t
+<:t
+SSW
+SSSPSW
+u-PSSW
+u+j
+[_^
+VWh
+_^[]
+ @;
+WPW
+WPW
+_^3
+IH;A
+SSVWh 
+YY;
+9wLt
+;3t'
+9=L
+VWP
+j"^
+X_^]
+p#E
+f9:t!V
+f9:u
+QSVW
+tVV
+YWWW
+SVWW
+t4P
+WSVPP
+;Vj
+[^]
+35p
+hHl
+35|
+j(h(l
+t"H
+t'H
+u"k
+j Y+
+ue;
+SV3
+_^[
+t9V
+_^]
+hhl
+t!W
+xE;5(
+H}+
+GQQ@j
+u-j
+_^3
+QSV
+Yf;
+Yf;
+|0(
+|0)
+_^3
+VPQ
+_^3
+0SV
+SShU
+PSh
+tLj
+_^3
+;5(
+tiV
+?Wk
+\:)
+D:( t
+SVP
+SVP
+SVP
+SVP
+t$j
+(@t
+QQSWj0j@
+t>V
+t%S
+Y_[^]
+xg;5(
+u#3
+_^[]
+x';
+}$3
+9E(j
+t5=
+RSV
+PPPPPWS
+QQQP
+t/;
+t8j
+PP9E u:PPVWP
+u.W
+_^[
+H(^
+Y^]
+QSV
+tl=(
+Y_^[
+YY^]
+H(^
+Y^]
+uCj
+GLP
+_^]
+@9E
+?5|
+89t
+:1u
+PSR
+[^]
+_^[
+tIA
+_A^
+_^3
+v*j
+wPr
+wIPS3
+r)w
+wCr
+s<3
+_^[
+Wj _
+j-X
+j _
+jrZ
+rg;
+jrZ
+rg;
+j&X
+std;
+u]3
+j&X
+std;
+ssN
+t|j
+PPPPP
+_^[t
+SSSSS
+u3V
+[_]
+@( t
+WWR
+_^]
+x$;
+F ;
+F$;
+F8;
+F<;
+F@;
+FD;
+FH;
+FL;
+Y^]
+F0;
+F4;
+Y^]
+_^[]
+F8j
+Fhj
+(^]
+SVW
+9E WW
+t5=
+t2RWV
+_^[
+t&V
+^_]
+_^3
+t4+
+t4+
+v#WP
+u!3
+PPPPPPPP
+I9M
+^_]
+VWj
+xE;5(
+YY;
+_^]
+h(m
+;=(
+t|W
+QQV
+d1(
+QQV
+<$f
+<$tL
+-8Z
+<$f
+~D$
+tL=
+|}f
+~D$
+|%=2
+YYt
+j@Y
+^[]
+PPj
+@hxX
+SV3
+^[]
+t%=
+t"=
+j@_
+t%=
+_^]
+t%=
+ VWj
+QQS3
+ SVW
+^[|
+F95
+?t)
+?t(
+?t1
+wlf
+s:f
+@t 
+,$Z
+$f=
+,$Z
+t==
+t_f
+$f=
+t*f
+ u!
+,$Z
+PQR
+VWt
+QQSV
+Vh?
+$f;
+HYY
+WVS
+[^_
+f#M
+Dz+
+\9E
+urj
+PQW
+YYt
+WVP
+tT=
+t7=
+PQQ
+t5=
+t"=
+t =
+_[]
+E h
+8_]
+A@]
+SVW
+_^[]
+hHm
+SVW
+Y_^[
+Y_^[
+9PE
+f9Q
+;T$
+;D$
+N+D$
++D$
+SVW
+WVU3
+;T$
+;D$
+N+D$
++D$
+]^_
+t7U
+<$Xf
+oF f
+on0
+oF f
+on0
+oF f
+on0
+INO
+oV 
+o^0
+of@
+onP
+ov`
+o~p
+ r#
+oV f
+o^0f
+W f
+_0f
+of@f
+onPf
+ov`f
+o~pf
+g@f
+oPf
+w`f
+ Ju
+FGIu
+FGIu
+oF f
+on0
+oF f
+on0
+oF f
+on0
+INO
+oV 
+o^0
+of@
+onP
+ov`
+o~p
+ r#
+oV f
+o^0f
+W f
+_0f
+of@f
+onPf
+ov`f
+o~pf
+g@f
+oPf
+w`f
+ Ju
+FGIu
+FGIu
+t93
+t G
+:cG
+u!%
+^_[3
+^_[
+^_[
+^_[
+__based(
+__cdecl
+__pascal
+__stdcall
+__thiscall
+__fastcall
+__vectorcall
+__clrcall
+__eabi
+__ptr64
+__restrict
+__unaligned
+restrict(
+ new
+ delete
+operator
+->*
+>>=
+<<=
+`vftable'
+`vbtable'
+`vcall'
+`typeof'
+`local static guard'
+`string'
+`vbase destructor'
+`vector deleting destructor'
+`default constructor closure'
+`scalar deleting destructor'
+`vector constructor iterator'
+`vector destructor iterator'
+`vector vbase constructor iterator'
+`virtual displacement map'
+`eh vector constructor iterator'
+`eh vector destructor iterator'
+`eh vector vbase constructor iterator'
+`copy constructor closure'
+`udt returning'
+`EH
+`RTTI
+`local vftable'
+`local vftable constructor closure'
+ new[]
+ delete[]
+`omni callsig'
+`placement delete closure'
+`placement delete[] closure'
+`managed vector constructor iterator'
+`managed vector destructor iterator'
+`eh vector copy constructor iterator'
+`eh vector vbase copy constructor iterator'
+`dynamic initializer for '
+`dynamic atexit destructor for '
+`vector copy constructor iterator'
+`vector vbase copy constructor iterator'
+`managed vector copy constructor iterator'
+`local static thread guard'
+operator "" 
+operator co_await
+ Type Descriptor'
+ Base Class Descriptor at (
+ Base Class Array'
+ Class Hierarchy Descriptor'
+ Complete Object Locator'
+FlsAlloc
+FlsFree
+FlsGetValue
+FlsSetValue
+InitializeCriticalSectionEx
+CorExitProcess
+EEE
+( 8PX
+700WP
+`h````
+xpxxxx
+EEE
+('8PW
+700PP
+`h`hhh
+xwpwpp
+(null)
+LCMapStringEx
+LocaleNameToLCID
+AppPolicyGetProcessTerminationMethod
+INF
+inf
+NAN
+nan
+NAN(SNAN)
+nan(snan)
+NAN(IND)
+nan(ind)
+e+000
+Sun
+Mon
+Tue
+Wed
+Thu
+Fri
+Sat
+Sunday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+Jan
+Feb
+Mar
+Apr
+May
+Jun
+Jul
+Aug
+Sep
+Oct
+Nov
+Dec
+January
+February
+March
+April
+June
+July
+August
+September
+October
+November
+December
+MM/dd/yy
+dddd, MMMM dd, yyyy
+HH:mm:ss
+ !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+c-^
+;lD
+,Bb
+&'O
+EZ%
+qVJ
+k#c
+d8L2
+[aOni*{
+'Pc
+onI
+@2&@
+"RP(
+}]9
+ev 
+eLK(w
+Di}
+FEMh
+h0'D
+%v}
+}m?
+:@O
+owM&
+&aV
+~ $s%r
+@b;zO]
+Omm
+w;I
+G 8
+$qE}
+7>,
+jVg
+;*xh
+id&
+,Ji
+&>r
+["93
+G-w
+iu+-,
+"m^
+\lo}
+obwQ4
+&Sgw
+[R/
+?nz(
+H[=
+EJj
+0+L
+wXC
+=87M
+!@f
+q=v
+}fL
+&`@
+BAL
+N2L
+v2!L.2
+cQr
+FZ*
+X/4B
+ycg
+fvP
+t^6
+k=yI
+Bnc
+laQ
+^<V7w
+dH9
+4X<
+W&|.
+1#INF
+1#QNAN
+1#SNAN
+1#IND
+log10
+5@=
+lzZ?
+exp
+log
+log10
+exp
+pow
+asin
+acos
+sqrt
+Q-8
+k8=
+-32
+?vP
+?zn
+@$"
+?5Wg4p
+Nv$^
+w(@
+?Ac
+?dr
+St)
+?4K
+?Qh
+BC .=
+a>-
+(lX 
+T@b
+ ==
+ $=
+? $
+35=
+dLi
+x"#
+?sl
+#{ =
+`~R=
+}s"=
+%S#[k
+!V1
+a2=
+"B <1=
+\-!y
+#.X'=
+HBO
+?y7
+i9+=
+sinh
+cosh
+tanh
+atan
+atan2
+sin
+cos
+tan
+ceil
+floor
+fabs
+modf
+ldexp
+_cabs
+_hypot
+fmod
+frexp
+_y0
+_y1
+_yn
+_logb
+_nextafter
+ABAB0123456789123456
+AEBDCF0123456789FDBA
+%s\bountyhunting\license.txt
+could not find license file.
+license size does not match.
+license is invalid.
+license checked successfully.
+RSDS3
+D:\Saved\Cursuri,proiecte\CursuriUniversitate\Laborator6\elemente_windows\DeUrcat\hunter_surse\Bounty\Release\Bounty.pdb
+GCTL
+.text$mn
+.idata$5
+.00cfg
+.CRT$XCA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIC
+.CRT$XIZ
+.CRT$XPA
+.CRT$XPX
+.CRT$XPXA
+.CRT$XPZ
+.CRT$XTA
+.CRT$XTZ
+.rdata
+.rdata$sxdata
+.rdata$zzzdbg
+.rtc$IAA
+.rtc$IZZ
+.rtc$TAA
+.rtc$TZZ
+.xdata$x
+.edata
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.data
+.bss
+.rsrc$01
+.rsrc$02
+Bounty.dll
+check_license
+ReadFile
+GetCurrentDirectoryA
+CreateFileA
+KERNEL32.dll
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+IsProcessorFeaturePresent
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+InitializeSListHead
+IsDebuggerPresent
+GetStartupInfoW
+GetModuleHandleW
+InterlockedFlushSList
+RtlUnwind
+GetLastError
+SetLastError
+EnterCriticalSection
+LeaveCriticalSection
+DeleteCriticalSection
+InitializeCriticalSectionAndSpinCount
+TlsAlloc
+TlsGetValue
+TlsSetValue
+TlsFree
+FreeLibrary
+GetProcAddress
+LoadLibraryExW
+ExitProcess
+GetModuleHandleExW
+GetModuleFileNameA
+MultiByteToWideChar
+WideCharToMultiByte
+HeapFree
+HeapAlloc
+LCMapStringW
+GetStdHandle
+GetFileType
+GetACP
+FindClose
+FindFirstFileExA
+FindNextFileA
+IsValidCodePage
+GetOEMCP
+GetCPInfo
+GetCommandLineA
+GetCommandLineW
+GetEnvironmentStringsW
+FreeEnvironmentStringsW
+GetProcessHeap
+FlushFileBuffers
+WriteFile
+GetConsoleCP
+GetConsoleMode
+SetStdHandle
+GetStringTypeW
+HeapSize
+HeapReAlloc
+CloseHandle
+SetFilePointerEx
+CreateFileW
+WriteConsoleW
+DecodePointer
+RaiseException
+                          
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                          
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+      <requestedPrivileges>
+        <requestedExecutionLevel level='asInvoker' uiAccess='false' />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>
+1B1\1
+2~2
+3[3x3
+4L5U5`5g5
+6"626B6R6[6|6
+7)7
+7f8
+9$949E9[9r9
+:?:
+;=;G;b;k;p;
+;0<><Y<d<
+=E=Y=`=
+=?>
+>*?U?
+E0X0
+3?3T3n3
+4#414L4]4i4
+5+575C5W5m5
+6'696>6C6j6s6x6}6
+7$7)7.7^7f7k7{7
+8b8n8
+919t9
+:#:
+;T;f;n;x;
+<!<0<><J<V<d<t<
+="=8=L=U=
+5h6
+8!8%8)8-81858
+2X6r6
+7,7
+7x8X;
+<M=c=
+=O>X>
+1'2B2R2W2a2f2q2|2
+3f3q3
+3K4]4p4t4|4
+5%50565D5e5~5
+62686J6
+9#:):
+;\;J<T<a<
+<)=L=S=f=
+>/>J>X>d>p>
+>.?F?V?j?u?z?
+0"0'0,0G0Q0m0x0}0
+1'1,111R1b1~1
+24292I2S2|2
+3H3
+6C6u6
+7I7l7
+7*8C8
+9R<
+=o?
+0c0
+0{1X2_2
+3(353P3\3g3
+4-4:4a4v4
+535=5!:
+<8=?=J=U=`=
+4&5M5
+5U6t6
+7 7*777A7Q7
+:;:{:
+;";&;,;0;6;:;D;W;`;{;
+<<=`>e>k>p>
+?$?
+#0N0n0
+171U1`1
+1*2/24292K2
+4?4G4_4l4x4
+5U6
+7~7
+778M8
+9":-:=:
+; ;*;I;g;
+;(<F<
+=2=
+>6>i>
+>$?
+2*282U2]2
+3o3
+3F4
+5T6y6
+7T8~8
+9L9b9
+9~?
+;5<<<<?
+2r4y4
+585J5\5n5
+616C6U6g6y6
+7d8v8
+9y:
+:*;];
+;H<
+?d?j?w?
+"080
+1_1
+2G324
+5#505B5
+5'6<6E6N6d6
+7"7(747S7Y7
+;h<j=
+=p>u>
+>a?m?
+0*020O0_0k0z0~1
+1(2E2Y2d2
+293
+3U4
+4K5L6\6m6u6
+7!7c7
+7(8@8
+8`9
+;w;
+;@<_<
+?:?P?f?n?
+3n6
+7%7q8
+;q=
+>[>`>d>h>l>
+151C1
+2(3/34383<3@3
+3V6
+1 1$1(14181<1T1X1`1d1h1l1p1t1x1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+>$>,>4><>D>L>T>\>d>l>t>|>
+?$?,?4?<?D?L?T?\?d?l?t?|?
+0$0,040<0D0L0T0\0d0l0t0|0
+1$1,141<1D1L1T1\1d1l1t1|1
+2$2,242<2D2L2T2\2d2l2t2|2
+3$3,343<3D3L3T3\3d3l3t3|3
+4$4,444<4D4L4T4\4d4l4t4|4
+? ?(?0?8?@?H?P?X?`?h?p?x?
+0 0(00080@0H0P0X0`0h0p0x0
+1 1(10181@1H1P1X1`1h1p1x1
+2 2(20282@2H2P2X2`2h2p2x2
+3 3(30383@3H3P3X3`3h3p3x3
+4 4(40484@4H4P4X4`4h4p4x4
+5 5(50585@5H5P5X5`5h5p5x5
+3$3,343<3D3L3T3\3d3l3t3|3
+: :@:`:
+; ;@;`;
+< <@<`<
+= =@=\=`=
+01`1p1
+1(7,7074787<7@7D7H7L7X7\7`7d7h7l7p7t7
